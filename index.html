@@ -1,8 +1,19 @@
-S<html>
-    <body>
+<html>
+
+    <head>
         <script language="javascript" type="text/javascript"> 
-        //This is just printing "Hello World", to the webpage using JS//-->
-                document.write("Hello World");
+        // Cresating a funtion to get a name and age.
+            function sayHello(name, age){
+                document.write(name + " is " + age + " years old.");
+               
+            }
         </script>
+    </head>
+    <body>
+        <p>Click the following button to call the function</p>
+        <form>
+            <input type="button" onclick="sayHello('Zara', 7)" value="Say Hello" traget="_blank">
+        </form>
+        <p>Use different parameters inside the function and then try again...</p>
     </body>
 </html>
